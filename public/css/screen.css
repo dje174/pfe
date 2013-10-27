@@ -48,8 +48,15 @@ body {
   width: 100%;
   font: 18px/1.5 "Franklin Gothic Book" sans-serif;
   background-color: #c2b59b; }
+/* line 10, ../scss/screen.scss */
+body a {
+  color: #2980b9;
+  text-decoration: none; }
+/* line 13, ../scss/screen.scss */
+body a:hover {
+  text-decoration: underline; }
 
-/* line 12, ../scss/screen.scss */
+/* line 19, ../scss/screen.scss */
 header {
   font: 25px/1.5 "CODE Light", "Lato", "Franklin Gothic Book" sans-serif;
   background-color: #323232;
@@ -60,13 +67,13 @@ header {
   padding: 0px;
   position: fixed; }
 
-/* line 24, ../scss/screen.scss */
+/* line 31, ../scss/screen.scss */
 nav ul {
   position: relative; }
-/* line 26, ../scss/screen.scss */
+/* line 33, ../scss/screen.scss */
 nav ul li {
   padding: 1em 0; }
-/* line 30, ../scss/screen.scss */
+/* line 37, ../scss/screen.scss */
 nav a {
   text-decoration: none;
   color: #c2b59b;
@@ -75,24 +82,31 @@ nav a {
   text-align: left;
   width: auto;
   padding-left: 20px; }
-/* line 38, ../scss/screen.scss */
+/* line 45, ../scss/screen.scss */
 nav a:hover {
   border-left: 0.188em solid #e67e22;
   color: #e67e22; }
 
-/* line 45, ../scss/screen.scss */
+/* line 52, ../scss/screen.scss */
 section.main {
   margin-left: 7em;
   margin-right: 2em; }
-/* line 48, ../scss/screen.scss */
+/* line 55, ../scss/screen.scss */
 section.main h2 {
+  padding-top: 2em;
   font-size: 28px;
   text-transform: uppercase; }
-/* line 52, ../scss/screen.scss */
+/* line 60, ../scss/screen.scss */
 section.main h3 {
   font-size: 23px;
   margin-top: 0.5em; }
-/* line 56, ../scss/screen.scss */
+/* line 64, ../scss/screen.scss */
+section.main h4 {
+  padding-left: 2em;
+  border-left: 0.188em solid #e67e22;
+  font-family: "CODE Bold";
+  margin-top: 1em; }
+/* line 70, ../scss/screen.scss */
 section.main div#description {
   margin: 3em 0;
   padding: 0.5em;
@@ -103,9 +117,9 @@ section.main div#description {
   -o-border-radius: 10px;
   border-radius: 10px; }
 
-/* line 65, ../scss/screen.scss */
+/* line 79, ../scss/screen.scss */
 div#icones .presentation {
-  margin-top: 5em;
+  margin-top: 3em;
   background-color: #e67e22;
   float: left;
   width: 150px;
@@ -116,14 +130,54 @@ div#icones .presentation {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px; }
-/* line 73, ../scss/screen.scss */
+/* line 87, ../scss/screen.scss */
 div#icones .presentation h4 {
   text-align: center;
   font-size: 25px;
   text-transform: uppercase;
-  color: white; }
+  color: white;
+  margin-left: -50px; }
 
-/* line 82, ../scss/screen.scss */
+/* line 97, ../scss/screen.scss */
+div#register {
+  margin: 2em 0; }
+/* line 99, ../scss/screen.scss */
+div#register label, div#register .block, div#register span {
+  display: block; }
+/* line 102, ../scss/screen.scss */
+div#register input {
+  border: none;
+  padding: 0.7em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  margin: 0.5em 0; }
+/* line 108, ../scss/screen.scss */
+div#register label, div#register span {
+  margin-top: 1em; }
+/* line 111, ../scss/screen.scss */
+div#register #submit {
+  margin-top: 2em;
+  background-color: #e67e22;
+  color: white;
+  padding: 1.5em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  border-radius: 1em;
+  text-transform: uppercase; }
+
+/* line 120, ../scss/screen.scss */
+div.content {
+  margin-top: 1em; }
+/* line 122, ../scss/screen.scss */
+div.content p {
+  margin-top: 0.5em; }
+
+/* line 127, ../scss/screen.scss */
 header:after {
   content: '';
   clear: both;

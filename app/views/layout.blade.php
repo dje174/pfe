@@ -12,6 +12,7 @@
             <ul>
                 <li><span>{{ link_to_route('home','Accueil') }}</span></li>
                 <li><span>{{ link_to_route('register','S\'inscrire') }}</span></li>
+                <li><span>{{ link_to_route('connect','Connexion') }}</span></li>
                 <li><span>{{ link_to_route('circles','Les cercles') }}</span></li>
                 <li><span>{{ link_to_route('about','À propos') }}</span></li>
             </ul>

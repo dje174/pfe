@@ -32,7 +32,11 @@ Route::get('/users', array('as' => 'listUsers', function(){
 
 Route::get('/user/register', array('as' => 'register', function(){
     return View::make('user.register');
-}));
+}));//S'inscrire
+
+Route::get('/user/connect', array('as' => 'connect', function(){
+    return View::make('user.connect');
+}));//Se connecter
 
 
 /* CIRCLES */
