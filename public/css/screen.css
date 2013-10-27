@@ -1,0 +1,130 @@
+/* line 17, ../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+/* line 103, ../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+/* line 32, ../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../Program Files (x86)/Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/* line 5, ../scss/screen.scss */
+body {
+  height: 100%;
+  width: 100%;
+  font: 18px/1.5 "Franklin Gothic Book" sans-serif;
+  background-color: #c2b59b; }
+
+/* line 12, ../scss/screen.scss */
+header {
+  font: 25px/1.5 "CODE Light", "Lato", "Franklin Gothic Book" sans-serif;
+  background-color: #323232;
+  float: left;
+  width: 200px;
+  min-height: 40em;
+  margin: 0;
+  padding: 0px;
+  position: fixed; }
+
+/* line 24, ../scss/screen.scss */
+nav ul {
+  position: relative; }
+/* line 26, ../scss/screen.scss */
+nav ul li {
+  padding: 1em 0; }
+/* line 30, ../scss/screen.scss */
+nav a {
+  text-decoration: none;
+  color: #c2b59b;
+  display: block;
+  height: auto;
+  text-align: left;
+  width: auto;
+  padding-left: 20px; }
+/* line 38, ../scss/screen.scss */
+nav a:hover {
+  border-left: 0.188em solid #e67e22;
+  color: #e67e22; }
+
+/* line 45, ../scss/screen.scss */
+section.main {
+  margin-left: 7em;
+  margin-right: 2em; }
+/* line 48, ../scss/screen.scss */
+section.main h2 {
+  font-size: 28px;
+  text-transform: uppercase; }
+/* line 52, ../scss/screen.scss */
+section.main h3 {
+  font-size: 23px;
+  margin-top: 0.5em; }
+/* line 56, ../scss/screen.scss */
+section.main div#description {
+  margin: 3em 0;
+  padding: 0.5em;
+  border: 1px solid #323232;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
+
+/* line 65, ../scss/screen.scss */
+div#icones .presentation {
+  margin-top: 5em;
+  background-color: #e67e22;
+  float: left;
+  width: 150px;
+  padding: 20px 50px;
+  margin-right: 50px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
+/* line 73, ../scss/screen.scss */
+div#icones .presentation h4 {
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: white; }
+
+/* line 82, ../scss/screen.scss */
+header:after {
+  content: '';
+  clear: both;
+  display: block; }

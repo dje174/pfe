@@ -1,0 +1,86 @@
+@import "compass";
+@import "compass/reset";
+@import "colors";
+
+body{
+	height: 100%;
+	width: 100%;
+	font: 18px/1.5 "Franklin Gothic Book" sans-serif;
+	background-color: $beige;
+}
+
+header{
+	font: 25px/1.5 "CODE Light", "Lato", "Franklin Gothic Book" sans-serif;
+	background-color:  $gris;
+	float: left;
+	width: 200px;
+	min-height: 40em;
+	margin:0;
+	padding:0px;
+	position: fixed;
+}
+
+nav{
+	ul{
+		position: relative;
+		li{
+			padding: 1em 0;
+		}
+	}
+	a{
+		text-decoration: none;
+		color: $beige;
+		display: block;
+		height: auto;
+		text-align: left;
+		width: auto;
+		padding-left: 20px;
+		&:hover{
+			border-left: 0.188em solid $orange;
+			color: $orange;
+		}
+	}
+}
+
+section.main{
+	margin-left: 7em;
+	margin-right: 2em;
+	h2{
+		font-size: 28px;
+		text-transform: uppercase;
+	}
+	h3{
+		font-size: 23px;
+		margin-top: 0.5em;
+	}
+	div#description{
+		margin: 3em 0;
+		padding: 0.5em;
+		border: 1px solid $gris;
+		@include border-radius(10px);
+	}
+}
+
+div#icones{
+	.presentation{
+		margin-top: 5em;
+		background-color: $orange;
+		float: left;
+		width: 150px;
+		padding: 20px 50px;
+		margin-right: 50px;
+		@include border-radius(10px);
+		h4{
+			text-align: center;
+			font-size: 25px;
+			text-transform: uppercase;
+			color: white;
+		}
+	}
+}
+
+header:after{
+	content:'';
+	clear: both;
+	display: block;
+}
