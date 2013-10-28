@@ -10,11 +10,11 @@
         <div id="logo"><a href="\">{{ HTML::image('img/MCLogoWhite.png'); }}</a></div>
         <nav>
             <ul>
-                <li><span>{{ link_to_route('home','Accueil') }}</span></li>
-                <li><span>{{ link_to_route('register','S\'inscrire') }}</span></li>
-                <li><span>{{ link_to_route('connect','Connexion') }}</span></li>
-                <li><span>{{ link_to_route('circles','Les cercles') }}</span></li>
-                <li><span>{{ link_to_route('about','À propos') }}</span></li>
+                <li><span>{{ link_to_route('myHome','Accueil') }}</span></li>
+                <li><span>{{ link_to_route('myCircles','Mes cercles') }}</span></li>
+                <li><span>{{ link_to_route('myFriendsCircles','Mes amis') }}</span></li>
+                <li><span>{{ link_to_route('settings','Paramètres') }}</span></li>
+                <li><span>{{ link_to_route('profile','Mon profil') }}</span></li>
             </ul>
         </nav>
     </header>

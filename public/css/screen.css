@@ -117,7 +117,10 @@ section.main div#description {
   -o-border-radius: 10px;
   border-radius: 10px; }
 
-/* line 79, ../scss/screen.scss */
+/* line 78, ../scss/screen.scss */
+div#icones {
+  margin-bottom: 1em; }
+/* line 80, ../scss/screen.scss */
 div#icones .presentation {
   margin-top: 3em;
   background-color: #e67e22;
@@ -130,7 +133,7 @@ div#icones .presentation {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px; }
-/* line 87, ../scss/screen.scss */
+/* line 88, ../scss/screen.scss */
 div#icones .presentation h4 {
   text-align: center;
   font-size: 25px;
@@ -138,13 +141,13 @@ div#icones .presentation h4 {
   color: white;
   margin-left: -50px; }
 
-/* line 97, ../scss/screen.scss */
+/* line 98, ../scss/screen.scss */
 div#register {
   margin: 2em 0; }
-/* line 99, ../scss/screen.scss */
+/* line 100, ../scss/screen.scss */
 div#register label, div#register .block, div#register span {
   display: block; }
-/* line 102, ../scss/screen.scss */
+/* line 103, ../scss/screen.scss */
 div#register input {
   border: none;
   padding: 0.7em;
@@ -153,11 +156,11 @@ div#register input {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  margin: 0.5em 0; }
-/* line 108, ../scss/screen.scss */
+  margin: 1em 0; }
+/* line 109, ../scss/screen.scss */
 div#register label, div#register span {
   margin-top: 1em; }
-/* line 111, ../scss/screen.scss */
+/* line 112, ../scss/screen.scss */
 div#register #submit {
   margin-top: 2em;
   background-color: #e67e22;
@@ -170,15 +173,15 @@ div#register #submit {
   border-radius: 1em;
   text-transform: uppercase; }
 
-/* line 120, ../scss/screen.scss */
+/* line 121, ../scss/screen.scss */
 div.content {
   margin-top: 1em; }
-/* line 122, ../scss/screen.scss */
+/* line 123, ../scss/screen.scss */
 div.content p {
   margin-top: 0.5em; }
 
-/* line 127, ../scss/screen.scss */
-header:after {
+/* line 128, ../scss/screen.scss */
+header:after, div#icones:after {
   content: '';
   clear: both;
   display: block; }

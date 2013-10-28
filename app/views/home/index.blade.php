@@ -1,6 +1,7 @@
 @extends('layout')
 
 @section('container')
+<!--
     <section class="main">
             <h2>Bienvenue sur Music Circles</h2>
             <h3>Écouter, partager, découvrir entre amis</h3>
@@ -32,5 +33,5 @@
                     <h4 class="icons">Discover</h4>
                 </article>
             </div>
-    </section>
+    </section>-->
 @stop

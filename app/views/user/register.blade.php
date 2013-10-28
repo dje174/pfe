@@ -6,7 +6,7 @@
         <h3>En toute simplicité et gratuité (bien sûr)</h3>
         <div id="register" class="forms">
             {{ Form::open() }}
-                <h4>{{ Form::label('Coordonées', 'Coordonées');}}</h4> 
+                <h4>{{ Form::label('Coordonnées', 'Coordonnées');}}</h4> 
                 {{ Form::text('Prénom', 'Prénom', array('class' => 'block'));}}
                 {{ Form::text('Nom', 'Nom', array('class' => 'block'));}}
                 {{ Form::text('E-mail', 'Adresse électronique', array('class' => 'block'));}}

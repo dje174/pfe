@@ -17,6 +17,9 @@ Route::get('/', array('as' => 'home', function(){
     return View::make('home.index');
 }));
 
+Route::get('/', array('as' => 'myHome', function(){
+    return View::make('home.myHome');
+}));
 
 /* USERS */
 
@@ -30,19 +33,23 @@ Route::get('/users', array('as' => 'listUsers', function(){
 }));
 //Voir la liste des utilisateurs
 
-Route::get('/user/register', array('as' => 'register', function(){
-    return View::make('user.register');
+Route::get('/user/settings', array('as' => 'settings', function(){
+    return View::make('user.settings');
 }));//S'inscrire
 
-Route::get('/user/connect', array('as' => 'connect', function(){
-    return View::make('user.connect');
+Route::get('/user/profile', array('as' => 'profile', function(){
+    return View::make('user.profile');
 }));//Se connecter
 
 
 /* CIRCLES */
 
-Route::get('/circles', array('as' => 'circles', function(){
-    return View::make('circles.index');
+Route::get('/my-circles', array('as' => 'myCircles', function(){
+    return View::make('circles.myCircles');
+}));
+
+Route::get('/my-friends-circles', array('as' => 'myFriendsCircles', function(){
+    return View::make('circles.myFriendsCircles');
 }));
 
 /* ABOUT */
