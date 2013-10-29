@@ -11,11 +11,11 @@
 |
 */
 
-/* HOME */
+/* HOME 
 
 Route::get('/', array('as' => 'home', function(){
     return View::make('home.index');
-}));
+}));*/
 
 Route::get('/', array('as' => 'myHome', function(){
     return View::make('home.myHome');
@@ -41,6 +41,10 @@ Route::get('/user/profile', array('as' => 'profile', function(){
     return View::make('user.profile');
 }));//Se connecter
 
+Route::get('/user/friend', array('as' => 'friend', function(){
+    return View::make('user.friend');
+}));//Se connecter
+
 
 /* CIRCLES */
 
@@ -50,6 +54,10 @@ Route::get('/my-circles', array('as' => 'myCircles', function(){
 
 Route::get('/my-friends-circles', array('as' => 'myFriendsCircles', function(){
     return View::make('circles.myFriendsCircles');
+}));
+
+Route::get('/circle', array('as' => 'circle', function(){
+    return View::make('circles.circle');
 }));
 
 /* ABOUT */

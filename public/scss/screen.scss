@@ -65,7 +65,7 @@ section.main{
 		padding-left: 2em;
 		border-left: 0.188em solid $orange;
 		font-family: "CODE Bold";
-		margin-top: 1em;
+		margin-top: 2em;
 	}
 	div#description{
 		margin: 3em 0;
@@ -125,7 +125,103 @@ div.content{
 	}
 }
 
-header:after,div#icones:after{
+/* Profil user */
+.content-zone{
+	margin: 1em 0;
+	border: 0.1em solid $grisBords;
+	background-color: $beigeClair;
+	h3{
+		margin-left: 1em;
+	}
+}
+
+.photoProfil{
+	float: left;
+	margin: 1em;
+	@include border-radius(5px);
+	@include single-box-shadow;
+}
+
+.informations{
+	padding: 0.7em 2em;
+	border-bottom: 0.1em solid $grisBords;
+	position: relative;
+}
+.sous{
+	@extend .informations;
+	background-color: $beigeBlanc;
+	width: 20em;
+	border: 0.1em solid $grisBords;
+	margin: 1em 5em;
+	span{
+		font-style: italic;
+		color: $gris;
+	}
+}
+.sous2{
+	@extend .sous;
+	width: auto;
+	margin: 1em 1em;
+	p.publications{
+		margin-top: 1em;
+	}
+}
+.modify{
+	position: absolute;
+	right: 5em;
+	top: -2.5em;
+	padding: 0.5em;
+	@include border-radius(0.5em);
+	border: none;
+	color: $gris;
+	background-color: white;
+	cursor: pointer;
+	&:hover{
+		background-color: $grisBords;
+		color: white;
+	}
+}
+
+/* Cercle */
+
+.photoCercle{
+	width: 100%;
+}
+
+/* Tuiles cercles */
+
+figure {
+	float: left;
+	min-width:15%;
+	width: 200px;
+	height: 200px;
+}
+figure.tuiles{
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+	figcaption{
+		position: absolute;
+		width: 200px;
+		height: 200px;
+		bottom:0;
+		left:0;
+		right:0;
+		top:0;
+		background-color: rgba(1,1,1,0.5);
+		color: white;
+		visibility: hidden;
+		@include transition(margin-bottom 0.3s ease-in, color 0.5s ease-out);
+		text-align: center;
+		font-weight: bold;
+		padding-top: 5em;
+		text-transform: uppercase;
+	}
+}
+figure.tuiles:hover figcaption{
+	visibility: visible;
+}
+header:after,div#icones:after,.informations:after, div.content-zone:after{
 	content:'';
 	clear: both;
 	display: block;
