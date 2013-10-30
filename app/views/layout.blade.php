@@ -16,6 +16,7 @@
                     <li><span>{{ link_to_route('myFriendsCircles','Mes amis') }}</span></li>
                     <li><span>{{ link_to_route('settings','Paramètres') }}</span></li>
                     <li><span>{{ link_to_route('profile','Mon profil') }}</span></li>
+                    <li><span>{{ link_to_route('logout','déconnecter') }}</span></li>
                 </ul>
             </nav>
         @else

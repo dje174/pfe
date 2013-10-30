@@ -1,7 +1,11 @@
 @extends('layout')
 
 @section('container')
-    <section class="main">
+
+    <section class="main">    
+    @if(Session::has('flash_notice'))
+        <div id="flash_notice">{{ Session::get('flash_notice') }}</div>
+    @endif
         <h2>De retour sur music Circles</h2>
         <h3>Concentré d'actualités</h3>
 

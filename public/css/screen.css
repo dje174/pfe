@@ -59,6 +59,7 @@ body a:hover {
 /* line 19, ../scss/screen.scss */
 header {
   font: 25px/1.5 "CODE Light", "Lato", "Franklin Gothic Book" sans-serif;
+  font-weight: 10px;
   background-color: #323232;
   float: left;
   width: 200px;
@@ -68,12 +69,15 @@ header {
   position: fixed; }
 
 /* line 31, ../scss/screen.scss */
+nav {
+  margin-top: 1em; }
+/* line 33, ../scss/screen.scss */
 nav ul {
   position: relative; }
-/* line 33, ../scss/screen.scss */
+/* line 35, ../scss/screen.scss */
 nav ul li {
-  padding: 1em 0; }
-/* line 37, ../scss/screen.scss */
+  padding: 0.8em 0; }
+/* line 39, ../scss/screen.scss */
 nav a {
   text-decoration: none;
   color: #c2b59b;
@@ -81,34 +85,39 @@ nav a {
   height: auto;
   text-align: left;
   width: auto;
-  padding-left: 20px; }
-/* line 45, ../scss/screen.scss */
+  padding-left: 20px;
+  -webkit-transition: 0.3s ease-in, color 0.5s ease-out;
+  -moz-transition: 0.3s ease-in, color 0.5s ease-out;
+  -o-transition: 0.3s ease-in, color 0.5s ease-out;
+  transition: 0.3s ease-in, color 0.5s ease-out; }
+/* line 48, ../scss/screen.scss */
 nav a:hover {
-  border-left: 0.188em solid #e67e22;
-  color: #e67e22; }
+  border-left: 0.3em solid #e67e22;
+  color: #e67e22;
+  padding-left: 1em; }
 
-/* line 52, ../scss/screen.scss */
+/* line 56, ../scss/screen.scss */
 section.main {
   margin-left: 7em;
   margin-right: 2em; }
-/* line 55, ../scss/screen.scss */
+/* line 59, ../scss/screen.scss */
 section.main h2 {
   padding-top: 2em;
   font-size: 28px;
   text-transform: uppercase; }
-/* line 60, ../scss/screen.scss */
+/* line 64, ../scss/screen.scss */
 section.main h3 {
   font-size: 23px;
   margin-top: 0.5em; }
-/* line 64, ../scss/screen.scss */
+/* line 68, ../scss/screen.scss */
 section.main h4 {
   padding-left: 2em;
   border-left: 0.188em solid #e67e22;
   font-family: "CODE Bold";
   margin-top: 2em; }
-/* line 70, ../scss/screen.scss */
+/* line 74, ../scss/screen.scss */
 section.main div#description {
-  margin: 3em 0;
+  margin-top: 2em;
   padding: 0.5em;
   border: 1px solid #323232;
   -webkit-border-radius: 10px;
@@ -116,38 +125,47 @@ section.main div#description {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px; }
-
-/* line 78, ../scss/screen.scss */
-div#icones {
-  margin-bottom: 1em; }
 /* line 80, ../scss/screen.scss */
+section.main .icons {
+  margin-top: 0.5em; }
+
+/* line 85, ../scss/screen.scss */
+div#icones {
+  margin: 2em 0; }
+/* line 87, ../scss/screen.scss */
 div#icones .presentation {
-  margin-top: 3em;
+  margin-top: 2em;
   background-color: #e67e22;
   float: left;
   width: 150px;
-  padding: 20px 50px;
-  margin-right: 50px;
+  padding: 0 1em;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px; }
-/* line 88, ../scss/screen.scss */
+/* line 94, ../scss/screen.scss */
+div#icones .presentation:nth-child(n+2) {
+  margin-left: 3.68em; }
+/* line 97, ../scss/screen.scss */
 div#icones .presentation h4 {
   text-align: center;
   font-size: 25px;
   text-transform: uppercase;
   color: white;
-  margin-left: -50px; }
+  margin-left: -50px;
+  border: none; }
+/* line 105, ../scss/screen.scss */
+div#icones .presentation img {
+  margin-left: 0.7em; }
 
-/* line 98, ../scss/screen.scss */
+/* line 111, ../scss/screen.scss */
 div#register {
   margin: 2em 0; }
-/* line 100, ../scss/screen.scss */
+/* line 113, ../scss/screen.scss */
 div#register label, div#register .block, div#register span {
   display: block; }
-/* line 103, ../scss/screen.scss */
+/* line 116, ../scss/screen.scss */
 div#register input {
   border: none;
   padding: 0.7em;
@@ -157,10 +175,10 @@ div#register input {
   -o-border-radius: 5px;
   border-radius: 5px;
   margin: 1em 0; }
-/* line 109, ../scss/screen.scss */
+/* line 122, ../scss/screen.scss */
 div#register label, div#register span {
   margin-top: 1em; }
-/* line 112, ../scss/screen.scss */
+/* line 125, ../scss/screen.scss */
 div#register #submit {
   margin-top: 2em;
   background-color: #e67e22;
@@ -171,26 +189,27 @@ div#register #submit {
   -ms-border-radius: 1em;
   -o-border-radius: 1em;
   border-radius: 1em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  cursor: pointer; }
 
-/* line 121, ../scss/screen.scss */
+/* line 135, ../scss/screen.scss */
 div.content {
   margin-top: 1em; }
-/* line 123, ../scss/screen.scss */
+/* line 137, ../scss/screen.scss */
 div.content p {
   margin-top: 0.5em; }
 
 /* Profil user */
-/* line 129, ../scss/screen.scss */
+/* line 143, ../scss/screen.scss */
 .content-zone {
   margin: 1em 0;
   border: 0.1em solid rgba(144, 144, 144, 0.8);
   background-color: #e1d4bb; }
-/* line 133, ../scss/screen.scss */
+/* line 147, ../scss/screen.scss */
 .content-zone h3 {
   margin-left: 1em; }
 
-/* line 138, ../scss/screen.scss */
+/* line 152, ../scss/screen.scss */
 .photoProfil {
   float: left;
   margin: 1em;
@@ -203,32 +222,32 @@ div.content p {
   -moz-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333; }
 
-/* line 145, ../scss/screen.scss */
+/* line 159, ../scss/screen.scss */
 .informations, .sous, .sous2 {
   padding: 0.7em 2em;
   border-bottom: 0.1em solid rgba(144, 144, 144, 0.8);
   position: relative; }
 
-/* line 150, ../scss/screen.scss */
+/* line 164, ../scss/screen.scss */
 .sous, .sous2 {
   background-color: #e8e1d2;
   width: 20em;
   border: 0.1em solid rgba(144, 144, 144, 0.8);
   margin: 1em 5em; }
-/* line 156, ../scss/screen.scss */
+/* line 170, ../scss/screen.scss */
 .sous span, .sous2 span {
   font-style: italic;
   color: #323232; }
 
-/* line 161, ../scss/screen.scss */
+/* line 175, ../scss/screen.scss */
 .sous2 {
   width: auto;
   margin: 1em 1em; }
-/* line 165, ../scss/screen.scss */
+/* line 179, ../scss/screen.scss */
 .sous2 p.publications {
   margin-top: 1em; }
 
-/* line 169, ../scss/screen.scss */
+/* line 183, ../scss/screen.scss */
 .modify {
   position: absolute;
   right: 5em;
@@ -243,34 +262,34 @@ div.content p {
   color: #323232;
   background-color: white;
   cursor: pointer; }
-/* line 179, ../scss/screen.scss */
+/* line 193, ../scss/screen.scss */
 .modify:hover {
   background-color: rgba(144, 144, 144, 0.8);
   color: white; }
 
-/* line 184, ../scss/screen.scss */
+/* line 198, ../scss/screen.scss */
 .add {
   background-color: #2ecc71; }
 
 /* Cercle */
-/* line 190, ../scss/screen.scss */
+/* line 204, ../scss/screen.scss */
 .photoCercle {
   width: 100%; }
 
 /* Tuiles cercles */
-/* line 196, ../scss/screen.scss */
+/* line 210, ../scss/screen.scss */
 figure {
   float: left;
   min-width: 15%;
   width: 200px;
   height: 200px; }
 
-/* line 202, ../scss/screen.scss */
+/* line 216, ../scss/screen.scss */
 figure.tuiles {
   margin: 0;
   overflow: hidden;
   position: relative; }
-/* line 206, ../scss/screen.scss */
+/* line 220, ../scss/screen.scss */
 figure.tuiles figcaption {
   position: absolute;
   width: 200px;
@@ -279,7 +298,7 @@ figure.tuiles figcaption {
   left: 0;
   right: 0;
   top: 0;
-  background-color: rgba(1, 1, 1, 0.5);
+  background-color: rgba(1, 1, 1, 0.7);
   color: white;
   visibility: hidden;
   -webkit-transition: margin-bottom 0.3s ease-in, color 0.5s ease-out;
@@ -291,11 +310,36 @@ figure.tuiles figcaption {
   padding-top: 5em;
   text-transform: uppercase; }
 
-/* line 224, ../scss/screen.scss */
+/* line 238, ../scss/screen.scss */
 figure.tuiles:hover figcaption {
   visibility: visible; }
 
-/* line 227, ../scss/screen.scss */
+/* line 242, ../scss/screen.scss */
+#flash_notice, #flash_error {
+  width: 16em;
+  padding: 0.4em 0.4em 0.4em 2.7em;
+  border: 0.1em solid rgba(144, 144, 144, 0.8);
+  background-color: #e1d4bb;
+  position: relative;
+  top: 1em; }
+/* line 249, ../scss/screen.scss */
+#flash_notice:before, #flash_error:before {
+  content: url("../img/icons/v-48.png");
+  position: absolute;
+  top: -0.3em;
+  left: 0em; }
+
+/* line 257, ../scss/screen.scss */
+#flash_error {
+  width: 20em; }
+/* line 260, ../scss/screen.scss */
+#flash_error:before {
+  content: url("../img/icons/close-48.png");
+  position: absolute;
+  top: -0.2em;
+  left: 0em; }
+
+/* line 268, ../scss/screen.scss */
 header:after, div#icones:after, .informations:after, .sous:after, .sous2:after, div.content-zone:after {
   content: '';
   clear: both;

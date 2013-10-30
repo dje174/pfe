@@ -21,6 +21,7 @@ Route::get('home', array('before' => 'auth', 'as' => 'myHome', function(){
     return View::make('home.myHome');
 }));//Accueil utilisateur
 
+
 /* USERS */
 
 Route::get('/user/show', array('as' => 'showUser', function(){
@@ -49,6 +50,7 @@ Route::get('register', array('as' => 'register', function(){
     return View::make('user.register');
 }));//S'inscrire quand non connecté
 
+
 /* CIRCLES */
 
 Route::get('/my-circles', array('before' => 'auth', 'as' => 'myCircles', function(){
@@ -67,11 +69,13 @@ Route::get('/circles', array('as' => 'circles', function(){
     return View::make('circles.index');
 }));//page explicative des cercles quand non connecté
 
+
 /* ABOUT */
 
 Route::get('/about', array('as' => 'about', function(){
     return View::make('about.index');
 }));//page about quand non connecté
+
 
 /* CONNEXION */
 
@@ -79,11 +83,37 @@ Route::get('login', array('as' => 'login', function(){
     return View::make('user.login');
 }));//Se connecter
 
-Route::post('user/connect',function(){
-    if(Auth::attempt(array('email' =>Input::get('email'),'pwd'=>Input::get('pwd')))){
-        return Redirect::intended('home');//tu vas sur la page sur laquelle tu essayais d'aller
+
+
+Route::post('login',function(){
+
+    $user = array(
+        'email' => Input::get('email'),
+        'password' => Input::get('password')
+    );
+
+    /*$validator = Validator::make(
+        array(  'email' => Input::get('email'),
+                'password' => Input::get('password')),
+        array(  'email' => 'required|email',
+                'password' => 'required|numeric')
+    );*/
+
+    if(Auth::attempt($user)){
+
+        return Redirect::intended('home')->with('flash_notice','Vous avez été identifié avec succès');
+
     }
     else{
-        return Redirect::to('user/connect');
+
+        return Redirect::to('login')->with('flash_error','Il y une erreur dans votre email/mot de passe');
+
     }
 });
+
+Route::get('logout', array('as' => 'logout', function () {
+
+    Auth::logout();
+
+    return Redirect::route('home')->with('flash_notice','Vous êtes maintenant déconnecté');
+}))->before('auth');
