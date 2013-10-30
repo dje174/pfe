@@ -12,6 +12,6 @@
 
         public function run(){
             DB::table('users')->delete();
-            User::create(array('username' => 'admin', 'first_name' => 'Jerome', 'password' => Hash::make('admin'),'email' => 'jeromepoucet@gmail.com'));
+            User::create(array('name' => 'admin', 'first_name' => 'Jerome', 'pwd' => Hash::make('admin'),'email' => 'jeromepoucet@gmail.com'));
         }
     }

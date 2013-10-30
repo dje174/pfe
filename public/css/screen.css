@@ -248,25 +248,29 @@ div.content p {
   background-color: rgba(144, 144, 144, 0.8);
   color: white; }
 
+/* line 184, ../scss/screen.scss */
+.add {
+  background-color: #2ecc71; }
+
 /* Cercle */
-/* line 187, ../scss/screen.scss */
+/* line 190, ../scss/screen.scss */
 .photoCercle {
   width: 100%; }
 
 /* Tuiles cercles */
-/* line 193, ../scss/screen.scss */
+/* line 196, ../scss/screen.scss */
 figure {
   float: left;
   min-width: 15%;
   width: 200px;
   height: 200px; }
 
-/* line 199, ../scss/screen.scss */
+/* line 202, ../scss/screen.scss */
 figure.tuiles {
   margin: 0;
   overflow: hidden;
   position: relative; }
-/* line 203, ../scss/screen.scss */
+/* line 206, ../scss/screen.scss */
 figure.tuiles figcaption {
   position: absolute;
   width: 200px;
@@ -287,11 +291,11 @@ figure.tuiles figcaption {
   padding-top: 5em;
   text-transform: uppercase; }
 
-/* line 221, ../scss/screen.scss */
+/* line 224, ../scss/screen.scss */
 figure.tuiles:hover figcaption {
   visibility: visible; }
 
-/* line 224, ../scss/screen.scss */
+/* line 227, ../scss/screen.scss */
 header:after, div#icones:after, .informations:after, .sous:after, .sous2:after, div.content-zone:after {
   content: '';
   clear: both;
