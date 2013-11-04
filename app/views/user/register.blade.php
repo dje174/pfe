@@ -1,11 +1,16 @@
 @extends('layout')
 
 @section('container')
+    @if($errors->any())
+        <ul>
+            {{ implode('',$errors->all('<li>:message</li>')) }}
+        </ul>
+    @endif
     <section class="main">
         <h2>S'inscrire</h2>
         <h3>En toute simplicité et gratuité (bien sûr)</h3>
         <div id="register" class="forms">
-            {{ Form::open() }}
+            {{ Form::open(array('route' => 'register.store')) }}
                 <h4>{{ Form::label('Coordonnées', 'Coordonnées');}}</h4> 
                 {{ Form::text('Prénom', 'Prénom', array('class' => 'block'));}}
                 {{ Form::text('Nom', 'Nom', array('class' => 'block'));}}

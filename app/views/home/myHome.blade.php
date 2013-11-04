@@ -13,13 +13,13 @@
             <div class="content-zone"> 
                 <article class="informations sous2"> 
                 {{ HTML::image('img/icons/circle-256.png', 'photo du cercle', array('class' => 'photoProfil')); }}              
-                    <p class="publications"><span> Il y a 10min, <a href="/user/friend">Djé</a> à publié dans le cercle <a href="/circle">Techno</a></span>
+                    <p class="publications"><span> Il y a 10min, <a href="/friend">Djé</a> à publié dans le cercle <a href="/circle">Techno</a></span>
                         <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, soluta, inventore sequi quaerat necessitatibus earum minima expedita modi eos eius vitae nostrum iusto ducimus quae quia molestiae esse iste ea."
                     </p>
                 </article>
                 <article class="informations sous2"> 
                 {{ HTML::image('img/icons/circle-32.png', 'photo du cercle', array('class' => 'photoProfil')); }}              
-                    <p class="publications"><span><a href="/user/friend">Fanny</a> s'est également abonné au cercle <a href="/circle">Minimale</a></span></p>
+                    <p class="publications"><span><a href="/friend">Fanny</a> s'est également abonné au cercle <a href="/circle">Minimale</a></span></p>
                 </article>
             </div>
 
@@ -27,13 +27,13 @@
             <div class="content-zone"> 
                 <article class="informations sous2"> 
                     {{ HTML::image('img/icons/circle-256.png', 'photo du cercle', array('class' => 'photoProfil')); }}              
-                        <p class="publications"><span> Il y a 9min, <a href="/user/friend">Sarah</a> à publié dans le cercle <a href="/circle">Musique Orientale</a></span>
+                        <p class="publications"><span> Il y a 9min, <a href="/friend">Sarah</a> à publié dans le cercle <a href="/circle">Musique Orientale</a></span>
                             <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, soluta, inventore sequi quaerat necessitatibus earum minima expedita modi eos eius vitae nostrum iusto ducimus quae quia molestiae esse iste ea."
                         </p>
                     </article>
                     <article class="informations sous2"> 
                     {{ HTML::image('img/icons/circle-32.png', 'photo du cercle', array('class' => 'photoProfil')); }}              
-                        <p class="publications"><span><a href="/user/friend">Paul</a> s'est abonné au cercle <a href="/circle">Métal</a></span></p>
+                        <p class="publications"><span><a href="/friend">Paul</a> s'est abonné au cercle <a href="/circle">Métal</a></span></p>
                     </article>
                 </div>
 

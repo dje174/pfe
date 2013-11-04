@@ -83,8 +83,6 @@ Route::get('login', array('as' => 'login', function(){
     return View::make('user.login');
 }));//Se connecter
 
-
-
 Route::post('login',function(){
 
     $user = array(
@@ -117,3 +115,16 @@ Route::get('logout', array('as' => 'logout', function () {
 
     return Redirect::route('home')->with('flash_notice','Vous êtes maintenant déconnecté');
 }))->before('auth');
+
+
+/* INSCRIPTION */
+
+Route::get('register', array(
+    'uses' => 'RegisterController@register',
+    'as' => 'user.register'
+));
+
+Route::post('register',array(
+    'uses' => 'RegisterController@store',
+    'as' => 'register.store'
+));

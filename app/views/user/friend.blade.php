@@ -24,13 +24,13 @@
 
             <h3>Ses amis</h3>
             <article class="informations">
-                <p><a href="/user/friend">Matthieu L</a></p>
-                <p><a href="/user/friend">Fanny D</a></p>
+                <p><a href="/friend">Matthieu L</a></p>
+                <p><a href="/friend">Fanny D</a></p>
             </article>
 
             <h3>Ses dernières publications</h3>
                 <article class="informations sous">
-                    <span><a href="/user/friend">Prénom</a> à publié dans le cercle <a href="/circle">Techno</a></span>
+                    <span><a href="/friend">Prénom</a> à publié dans le cercle <a href="/circle">Techno</a></span>
                     <p>"Découvrez la nouvelle compo de Raving George</p>
                     <a href="https://soundcloud.com/ravinggeorge/monodon">Par ici</a>"
                 </article>
