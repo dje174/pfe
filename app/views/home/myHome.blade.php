@@ -21,6 +21,7 @@
                 {{ HTML::image('img/icons/circle-32.png', 'photo du cercle', array('class' => 'photoProfil')); }}              
                     <p class="publications"><span><a href="/friend">Fanny</a> s'est également abonné au cercle <a href="/circle">Minimale</a></span></p>
                 </article>
+                <a href="my-circles" class="plus">Voir plus d'actualités de vos cercles</a>
             </div>
 
         <h4>Les dernières actus de vos amis</h4>
@@ -30,12 +31,13 @@
                         <p class="publications"><span> Il y a 9min, <a href="/friend">Sarah</a> à publié dans le cercle <a href="/circle">Musique Orientale</a></span>
                             <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, soluta, inventore sequi quaerat necessitatibus earum minima expedita modi eos eius vitae nostrum iusto ducimus quae quia molestiae esse iste ea."
                         </p>
-                    </article>
-                    <article class="informations sous2"> 
-                    {{ HTML::image('img/icons/circle-32.png', 'photo du cercle', array('class' => 'photoProfil')); }}              
-                        <p class="publications"><span><a href="/friend">Paul</a> s'est abonné au cercle <a href="/circle">Métal</a></span></p>
-                    </article>
-                </div>
+                </article>
+                <article class="informations sous2"> 
+                {{ HTML::image('img/icons/circle-32.png', 'photo du cercle', array('class' => 'photoProfil')); }}              
+                    <p class="publications"><span><a href="/friend">Paul</a> s'est abonné au cercle <a href="/circle">Métal</a></span></p>
+                </article>
+                <a href="my-friends-circles" class="plus">Voir plus d'actualités des cercles de vos amis</a>
+            </div>
 
         <h4>Les cercles qui pourraient vous intéresser </h4>
             <div class="content-zone">

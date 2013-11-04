@@ -80,6 +80,10 @@ section.main{
 	.icons {
 		margin-top: 0.5em;
 	}
+	.plus{
+		margin: 0 1em 1em 1em;
+		float: right;
+	}
 }
 
 div#icones{
@@ -157,9 +161,13 @@ div.content{
 }
 
 .informations{
-	padding: 0.7em 2em;
 	border-bottom: 0.1em solid $grisBords;
 	position: relative;
+}
+
+.informationsProfil{
+	padding: 0.7em 2em;
+	@extend .informations;
 }
 .sous{
 	@extend .informations;

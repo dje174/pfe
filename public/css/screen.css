@@ -128,11 +128,15 @@ section.main div#description {
 /* line 80, ../scss/screen.scss */
 section.main .icons {
   margin-top: 0.5em; }
+/* line 83, ../scss/screen.scss */
+section.main .plus {
+  margin: 0 1em 1em 1em;
+  float: right; }
 
-/* line 85, ../scss/screen.scss */
+/* line 89, ../scss/screen.scss */
 div#icones {
   margin: 2em 0; }
-/* line 87, ../scss/screen.scss */
+/* line 91, ../scss/screen.scss */
 div#icones .presentation {
   margin-top: 2em;
   background-color: #e67e22;
@@ -144,10 +148,10 @@ div#icones .presentation {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px; }
-/* line 94, ../scss/screen.scss */
+/* line 98, ../scss/screen.scss */
 div#icones .presentation:nth-child(n+2) {
   margin-left: 3.68em; }
-/* line 97, ../scss/screen.scss */
+/* line 101, ../scss/screen.scss */
 div#icones .presentation h4 {
   text-align: center;
   font-size: 25px;
@@ -155,17 +159,17 @@ div#icones .presentation h4 {
   color: white;
   margin-left: -50px;
   border: none; }
-/* line 105, ../scss/screen.scss */
+/* line 109, ../scss/screen.scss */
 div#icones .presentation img {
   margin-left: 0.7em; }
 
-/* line 111, ../scss/screen.scss */
+/* line 115, ../scss/screen.scss */
 div#register {
   margin: 2em 0; }
-/* line 113, ../scss/screen.scss */
+/* line 117, ../scss/screen.scss */
 div#register label, div#register .block, div#register span {
   display: block; }
-/* line 116, ../scss/screen.scss */
+/* line 120, ../scss/screen.scss */
 div#register input {
   border: none;
   padding: 0.7em;
@@ -175,10 +179,10 @@ div#register input {
   -o-border-radius: 5px;
   border-radius: 5px;
   margin: 1em 0; }
-/* line 122, ../scss/screen.scss */
+/* line 126, ../scss/screen.scss */
 div#register label, div#register span {
   margin-top: 1em; }
-/* line 125, ../scss/screen.scss */
+/* line 129, ../scss/screen.scss */
 div#register #submit {
   margin-top: 2em;
   background-color: #e67e22;
@@ -192,24 +196,24 @@ div#register #submit {
   text-transform: uppercase;
   cursor: pointer; }
 
-/* line 135, ../scss/screen.scss */
+/* line 139, ../scss/screen.scss */
 div.content {
   margin-top: 1em; }
-/* line 137, ../scss/screen.scss */
+/* line 141, ../scss/screen.scss */
 div.content p {
   margin-top: 0.5em; }
 
 /* Profil user */
-/* line 143, ../scss/screen.scss */
+/* line 147, ../scss/screen.scss */
 .content-zone {
   margin: 1em 0;
   border: 0.1em solid rgba(144, 144, 144, 0.8);
   background-color: #e1d4bb; }
-/* line 147, ../scss/screen.scss */
+/* line 151, ../scss/screen.scss */
 .content-zone h3 {
   margin-left: 1em; }
 
-/* line 152, ../scss/screen.scss */
+/* line 156, ../scss/screen.scss */
 .photoProfil {
   float: left;
   margin: 1em;
@@ -222,32 +226,35 @@ div.content p {
   -moz-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333; }
 
-/* line 159, ../scss/screen.scss */
-.informations, .sous, .sous2 {
-  padding: 0.7em 2em;
+/* line 163, ../scss/screen.scss */
+.informations, .informationsProfil, .sous, .sous2 {
   border-bottom: 0.1em solid rgba(144, 144, 144, 0.8);
   position: relative; }
 
-/* line 164, ../scss/screen.scss */
+/* line 168, ../scss/screen.scss */
+.informationsProfil {
+  padding: 0.7em 2em; }
+
+/* line 172, ../scss/screen.scss */
 .sous, .sous2 {
   background-color: #e8e1d2;
   width: 20em;
   border: 0.1em solid rgba(144, 144, 144, 0.8);
   margin: 1em 5em; }
-/* line 170, ../scss/screen.scss */
+/* line 178, ../scss/screen.scss */
 .sous span, .sous2 span {
   font-style: italic;
   color: #323232; }
 
-/* line 175, ../scss/screen.scss */
+/* line 183, ../scss/screen.scss */
 .sous2 {
   width: auto;
   margin: 1em 1em; }
-/* line 179, ../scss/screen.scss */
+/* line 187, ../scss/screen.scss */
 .sous2 p.publications {
   margin-top: 1em; }
 
-/* line 183, ../scss/screen.scss */
+/* line 191, ../scss/screen.scss */
 .modify {
   position: absolute;
   right: 5em;
@@ -262,34 +269,34 @@ div.content p {
   color: #323232;
   background-color: white;
   cursor: pointer; }
-/* line 193, ../scss/screen.scss */
+/* line 201, ../scss/screen.scss */
 .modify:hover {
   background-color: rgba(144, 144, 144, 0.8);
   color: white; }
 
-/* line 198, ../scss/screen.scss */
+/* line 206, ../scss/screen.scss */
 .add {
   background-color: #2ecc71; }
 
 /* Cercle */
-/* line 204, ../scss/screen.scss */
+/* line 212, ../scss/screen.scss */
 .photoCercle {
   width: 100%; }
 
 /* Tuiles cercles */
-/* line 210, ../scss/screen.scss */
+/* line 218, ../scss/screen.scss */
 figure {
   float: left;
   min-width: 15%;
   width: 200px;
   height: 200px; }
 
-/* line 216, ../scss/screen.scss */
+/* line 224, ../scss/screen.scss */
 figure.tuiles {
   margin: 0;
   overflow: hidden;
   position: relative; }
-/* line 220, ../scss/screen.scss */
+/* line 228, ../scss/screen.scss */
 figure.tuiles figcaption {
   position: absolute;
   width: 200px;
@@ -310,11 +317,11 @@ figure.tuiles figcaption {
   padding-top: 5em;
   text-transform: uppercase; }
 
-/* line 238, ../scss/screen.scss */
+/* line 246, ../scss/screen.scss */
 figure.tuiles:hover figcaption {
   visibility: visible; }
 
-/* line 242, ../scss/screen.scss */
+/* line 250, ../scss/screen.scss */
 #flash_notice, #flash_error {
   width: 16em;
   padding: 0.4em 0.4em 0.4em 2.7em;
@@ -322,25 +329,25 @@ figure.tuiles:hover figcaption {
   background-color: #e1d4bb;
   position: relative;
   top: 1em; }
-/* line 249, ../scss/screen.scss */
+/* line 257, ../scss/screen.scss */
 #flash_notice:before, #flash_error:before {
   content: url("../img/icons/v-48.png");
   position: absolute;
   top: -0.3em;
   left: 0em; }
 
-/* line 257, ../scss/screen.scss */
+/* line 265, ../scss/screen.scss */
 #flash_error {
   width: 20em; }
-/* line 260, ../scss/screen.scss */
+/* line 268, ../scss/screen.scss */
 #flash_error:before {
   content: url("../img/icons/close-48.png");
   position: absolute;
   top: -0.2em;
   left: 0em; }
 
-/* line 268, ../scss/screen.scss */
-header:after, div#icones:after, .informations:after, .sous:after, .sous2:after, div.content-zone:after {
+/* line 276, ../scss/screen.scss */
+header:after, div#icones:after, .informations:after, .informationsProfil:after, .sous:after, .sous2:after, div.content-zone:after {
   content: '';
   clear: both;
   display: block; }
