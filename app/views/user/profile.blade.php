@@ -3,7 +3,7 @@
 @section('container')
     <section class="main">
         <h2>Mon profil</h2>
-        <div class="content-zone">
+        <div class="content-profil">
             {{ HTML::image('img/icons/boy-256.png', 'photo de profil', array('class' => 'photoProfil')); }}
             <h3>À propos</h3>
             <article class="informationsProfil">

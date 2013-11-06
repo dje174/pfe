@@ -5,7 +5,7 @@
 body{
 	height: 100%;
 	width: 100%;
-	font: 18px/1.5 "Franklin Gothic Book" sans-serif;
+	font: 18px/1.5 "Roboto Regular" sans-serif;
 	background-color: #efefef;
 	a{
 		color: #2980b9;
@@ -15,6 +15,8 @@ body{
 		}
 	}
 }
+
+/* BARRE DE NAVIGATION */
 
 header{
 	font: 22px/1.5 "Century Gothic", "Lato", "Franklin Gothic Book", sans-serif;
@@ -53,11 +55,13 @@ nav{
 	}
 }
 
+/* SECTION PRINCIPALE */
+
 section.main{
 	margin-left: 7em;
 	margin-right: 2em;
 	h2{
-		padding-top: 2em;
+		padding: 2em 0 0.5em 0;
 		font-size: 28px;
 		font-family: "Century Gothic";
 		text-transform: uppercase;
@@ -87,6 +91,8 @@ section.main{
 	}
 }
 
+/* ICONES DE L'ACCUEIL NON CONNECTÉ */
+
 div#icones{
 	margin: 2em 0;
 	.presentation{
@@ -113,135 +119,11 @@ div#icones{
 	}
 }
 
-div#register{
-	width: 30em;
-	input{
-		border: none;
-		padding: 0.7em;
-		@include border-radius(5px);
-		margin: 1.5em 1em 0 0;
-		box-shadow: 0px 0px 3px $grisBords;
-	}
-	h4{
-		margin: 1.5em 0 0 0;
-	}
-	label, span{
-		margin-top: 1em;
-	}
-	.block{
-		width: 25em;
-	}
-	.submit{
-		margin-top: 2em;
-		background-color: $orange;
-		color: white;
-		padding: 1em;
-		@include border-radius(0.5em);
-		text-transform: uppercase;
-		cursor: pointer;
-		display: block;
-		&:hover{
-			background-color: $orangeHover;
-		}
-	}
-	#stayConnect{
-		display: block;
-	}
-
-}
-div.content{
-	margin-top: 1em;
-	p{
-		margin-top: 0.5em;
-	}
-}
-
-/* Profil user */
-.content-zone{
-	position: relative;
-	margin: 1em 1em 1em 0;
-	border: 0.1em solid $grisBords;
-	background-color: #efefef;
-	float: left;
-	width: 48%;
-	min-height: 23em;
-	h3{
-		margin-left: 1em;
-	}
-
-	.plus{
-		text-align: right;
-		position: absolute;
-		left:25.5em;
-		top:21em;
-	}
-}
-
-.photoProfil{
-	float: left;
-	margin: 1em;
-	@include border-radius(5px);
-	@include single-box-shadow;
-}
-
-.informations{
-	border-bottom: 0.1em solid $grisBords;
-	background-color: white;
-	position: relative;
-}
-
-.informationsProfil{
-	padding: 0.7em 2em;
-	@extend .informations;
-}
-.sous{
-	@extend .informations;
-	width: 20em;
-	border: 0.1em solid $grisBords;
-	margin: 1em 5em;
-	span{
-		font-style: italic;
-		color: $gris;
-	}
-}
-.sous2{
-	@extend .sous;
-	width: auto;
-	margin: 1em 1em;
-	p.publications{
-		margin-top: 1em;
-	}
-}
-.modify{
-	position: absolute;
-	right: 5em;
-	top: -2.5em;
-	padding: 0.5em;
-	@include border-radius(0.5em);
-	border: none;
-	color: $gris;
-	background-color: white;
-	cursor: pointer;
-	&:hover{
-		background-color: $grisBords;
-		color: white;
-	}
-}
-.add{
-	background-color: $emeraude;
-}
-
-/* Cercle */
-
-.photoCercle{
-	width: 100%;
-}
-
-/* Tuiles cercles */
+/* TUILES SUGGESTIONS ACCUEIL CONNECTÉ */
 
 #suggestions{
 	@extend .content-zone;
-	width: 100%;
+	width: auto;
 	div.tuiles{
 		margin-top: 1em;
 	}
@@ -277,6 +159,228 @@ div.content{
 		visibility: visible;
 	}
 }
+
+/* LES FORMULAIRES CONNEXION/INSCRIPTION */
+
+div#register{
+	width: 30em;
+	input{
+		border: none;
+		padding: 0.7em;
+		@include border-radius(5px);
+		margin: 1.5em 1em 0 0;
+		box-shadow: 0px 0px 3px $grisBords;
+	}
+	h4{
+		margin: 1.5em 0 0 0;
+	}
+	label, span{
+		margin-top: 1em;
+	}
+	.block{
+		width: 25em;
+	}
+	.submit{
+		margin-top: 2em;
+		background-color: $orange;
+		color: white;
+		padding: 1em;
+		@include border-radius(0.5em);
+		text-transform: uppercase;
+		cursor: pointer;
+		display: block;
+		&:hover{
+			background-color: $orangeHover;
+		}
+	}
+	#stayConnect{
+		display: block;
+	}
+}
+div.content{
+	margin-top: 1em;
+	p{
+		margin-top: 0.5em;
+	}
+}
+
+/* MES CERLCES */
+section.feed{
+	margin: 1em 0;
+	article.actuality{
+		margin: 0 1em 1em 0;
+		@extend .informations;
+		width: 48%;
+		border: 1px solid #dddddd;
+		@include border-radius(0.2em);
+		float: left;
+		.photoPublications{
+			@include border-radius(0.4em);
+			@include single-box-shadow;
+			float: left;
+			margin: 1em;
+		}
+		p.publications{
+			margin-top: 0.9em;
+			line-height: 1.1em;
+		}
+		p.content{
+			padding: 1em;
+			border-bottom: 1px solid #dddddd;
+		}
+		div.commentaires{
+			padding: 1em;
+			text-align: center;
+			a.comments,a.like,a.share{
+				font-size: 15px;
+				padding: 0 2em;
+			}
+			form{
+				width: 100%;
+				padding-top: 1em;
+				input{
+					border: 1px solid #dddddd;
+					padding: 0.7em;
+					margin-top: 1em;
+				}
+				.commentaire{
+					width: 80%;
+				}
+			}
+		}
+		span{
+			display: block;
+			&.who{
+				font-weight: bold;
+			}
+			&.time,&.where{
+				color: #5d5d5d;
+				font-size: 15px;
+			}
+		}
+		.submit{
+			@include border-radius(0.2em);
+		}
+	}
+}
+section.publish{
+	padding:0.5em;
+	border: 1px solid #dddddd;
+	background-color: white;
+	width: 20em;
+	@include border-radius(0.2em);
+	#textarea{
+		width: 26.5em;
+		height: 5em;
+		border: 1px solid #dddddd;
+		@include border-radius(0.2em);
+	}
+	.submit {
+		border: 1px solid #dddddd;
+		padding: 0.7em;
+		margin-top: 1em;
+		@include border-radius(0.2em);
+		display: block;
+	}
+	p.select{
+		display: block;
+		font-size: 15px;
+	}
+	h5{
+		color: #5d5d5d;
+		font-size: 15px;
+		padding-bottom: 0.5em;
+	}
+}
+/* PROFIL UTILISATEURS */
+
+.content-zone{
+	position: relative;
+	margin: 1em 1em 1em 0;
+	border: 0.1em solid $grisBords;
+	background-color: #efefef;
+	float: left;
+	width: 48%;
+	min-height: 23em;
+	h3{
+		margin-left: 1em;
+	}
+
+	.plus{
+		text-align: right;
+		position: absolute;
+		left:25.5em;
+		top:21em;
+	}
+	.content{
+		padding: 0.5em 1em;
+	}
+}
+
+.photoProfil{
+	float: left;
+	margin: 1em;
+	@include border-radius(5px);
+	@include single-box-shadow;
+}
+
+.informations{
+	border-bottom: 0.1em solid $grisBords;
+	background-color: white;
+	position: relative;
+}
+.content-profil{
+	border: 0.1em solid $grisBords;
+	margin: 1em 1em 1em 0;
+	h3{
+		margin-left: 1em;
+	}
+}
+.informationsProfil{
+	border-bottom: 0.1em solid $grisBords;
+	padding: 0.7em 2em;
+}
+.sous{
+	@extend .informations;
+	width: 20em;
+	border: 0.1em solid $grisBords;
+	margin: 1em 5em;
+	-span{
+		font-style: italic;
+		color: $gris;
+	}
+}
+.sous2{
+	@extend .sous;
+	width: auto;
+	margin: 1em 1em;
+}
+.modify{
+	position: absolute;
+	right: 5em;
+	top: -2.5em;
+	padding: 0.5em;
+	@include border-radius(0.5em);
+	border: none;
+	color: $gris;
+	background-color: white;
+	cursor: pointer;
+	&:hover{
+		background-color: $grisBords;
+		color: white;
+	}
+}
+.add{
+	background-color: $emeraude;
+}
+
+/* CERCLE */
+
+.photoCercle{
+	width: 100%;
+}
+
+/* MESSAGES DE CONNEXIONS */
 
 #flash_notice{
 	padding: 0.2em 0.5em;

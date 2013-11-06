@@ -7,13 +7,13 @@
                 <article class="informations sous2"> 
                 {{ HTML::image('img/icons/circle-256.png', 'photo du cercle', array('class' => 'photoProfil')); }}              
                     <p class="publications"><span> Il y a 9min, <a href="/friend">Sarah</a> à publié dans le cercle <a href="/circle">Musique Orientale</a></span>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, soluta, inventore sequi quaerat necessitatibus earum minima expedita modi eos eius vitae nostrum iusto ducimus quae quia molestiae esse iste ea."
+                        <p class="content">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, soluta, inventore sequi quaerat necessitatibus earum minima expedita modi eos eius vitae nostrum iusto ducimus quae quia molestiae esse iste ea."
                     </p>
                 </article>
                 <article class="informations sous2"> 
                 {{ HTML::image('img/icons/circle-256.png', 'photo du cercle', array('class' => 'photoProfil')); }}              
                     <p class="publications"><span> Il y a 16min, <a href="/friend">Fanny</a> à publié dans le cercle <a href="/circle">Hip-Hop</a></span>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, soluta, inventore sequi quaerat necessitatibus earum minima expedita modi eos eius vitae nostrum iusto ducimus quae quia molestiae esse iste ea."
+                        <p class="content">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, soluta, inventore sequi quaerat necessitatibus earum minima expedita modi eos eius vitae nostrum iusto ducimus quae quia molestiae esse iste ea."
                     </p>
                 </article>
                 <article class="informations sous2"> 
@@ -23,7 +23,7 @@
                 <article class="informations sous2"> 
                 {{ HTML::image('img/icons/circle-256.png', 'photo du cercle', array('class' => 'photoProfil')); }}              
                     <p class="publications"><span> Il y a 1h30, <a href="/friend">Matthieu</a> à publié dans le cercle <a href="/circle">Country</a></span>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, soluta, inventore sequi quaerat necessitatibus earum minima expedita modi eos eius vitae nostrum iusto ducimus quae quia molestiae esse iste ea."
+                        <p class="content">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, soluta, inventore sequi quaerat necessitatibus earum minima expedita modi eos eius vitae nostrum iusto ducimus quae quia molestiae esse iste ea."
                     </p>
                 </article>
                 <article class="informations sous2"> 
