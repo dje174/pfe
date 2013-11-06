@@ -166,7 +166,7 @@ div#icones .presentation img {
 
 /* line 116, ../scss/screen.scss */
 div#register {
-  width: 21em; }
+  width: 30em; }
 /* line 118, ../scss/screen.scss */
 div#register input {
   border: none;
@@ -188,7 +188,7 @@ div#register label, div#register span {
 div#register .block {
   width: 25em; }
 /* line 134, ../scss/screen.scss */
-div#register #submit {
+div#register .submit {
   margin-top: 2em;
   background-color: #e67e22;
   color: white;
@@ -202,18 +202,21 @@ div#register #submit {
   cursor: pointer;
   display: block; }
 /* line 143, ../scss/screen.scss */
-div#register #submit:hover {
+div#register .submit:hover {
   background-color: #f48726; }
+/* line 147, ../scss/screen.scss */
+div#register #stayConnect {
+  display: block; }
 
-/* line 148, ../scss/screen.scss */
+/* line 152, ../scss/screen.scss */
 div.content {
   margin-top: 1em; }
-/* line 150, ../scss/screen.scss */
+/* line 154, ../scss/screen.scss */
 div.content p {
   margin-top: 0.5em; }
 
 /* Profil user */
-/* line 156, ../scss/screen.scss */
+/* line 160, ../scss/screen.scss */
 .content-zone, #suggestions {
   position: relative;
   margin: 1em 1em 1em 0;
@@ -222,17 +225,17 @@ div.content p {
   float: left;
   width: 48%;
   min-height: 23em; }
-/* line 164, ../scss/screen.scss */
+/* line 168, ../scss/screen.scss */
 .content-zone h3, #suggestions h3 {
   margin-left: 1em; }
-/* line 168, ../scss/screen.scss */
+/* line 172, ../scss/screen.scss */
 .content-zone .plus, #suggestions .plus {
   text-align: right;
   position: absolute;
   left: 25.5em;
   top: 21em; }
 
-/* line 176, ../scss/screen.scss */
+/* line 180, ../scss/screen.scss */
 .photoProfil {
   float: left;
   margin: 1em;
@@ -245,35 +248,35 @@ div.content p {
   -moz-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333; }
 
-/* line 183, ../scss/screen.scss */
+/* line 187, ../scss/screen.scss */
 .informations, .informationsProfil, .sous, .sous2 {
   border-bottom: 0.1em solid rgba(144, 144, 144, 0.8);
   background-color: white;
   position: relative; }
 
-/* line 189, ../scss/screen.scss */
+/* line 193, ../scss/screen.scss */
 .informationsProfil {
   padding: 0.7em 2em; }
 
-/* line 193, ../scss/screen.scss */
+/* line 197, ../scss/screen.scss */
 .sous, .sous2 {
   width: 20em;
   border: 0.1em solid rgba(144, 144, 144, 0.8);
   margin: 1em 5em; }
-/* line 198, ../scss/screen.scss */
+/* line 202, ../scss/screen.scss */
 .sous span, .sous2 span {
   font-style: italic;
   color: #323232; }
 
-/* line 203, ../scss/screen.scss */
+/* line 207, ../scss/screen.scss */
 .sous2 {
   width: auto;
   margin: 1em 1em; }
-/* line 207, ../scss/screen.scss */
+/* line 211, ../scss/screen.scss */
 .sous2 p.publications {
   margin-top: 1em; }
 
-/* line 211, ../scss/screen.scss */
+/* line 215, ../scss/screen.scss */
 .modify {
   position: absolute;
   right: 5em;
@@ -288,39 +291,40 @@ div.content p {
   color: #323232;
   background-color: white;
   cursor: pointer; }
-/* line 221, ../scss/screen.scss */
+/* line 225, ../scss/screen.scss */
 .modify:hover {
   background-color: rgba(144, 144, 144, 0.8);
   color: white; }
 
-/* line 226, ../scss/screen.scss */
+/* line 230, ../scss/screen.scss */
 .add {
   background-color: #2ecc71; }
 
 /* Cercle */
-/* line 232, ../scss/screen.scss */
+/* line 236, ../scss/screen.scss */
 .photoCercle {
   width: 100%; }
 
 /* Tuiles cercles */
-/* line 237, ../scss/screen.scss */
+/* line 242, ../scss/screen.scss */
 #suggestions {
   width: 100%; }
-
-/* line 241, ../scss/screen.scss */
-figure {
+/* line 245, ../scss/screen.scss */
+#suggestions div.tuiles {
+  margin-top: 1em; }
+/* line 248, ../scss/screen.scss */
+#suggestions figure {
   float: left;
   min-width: 15%;
   width: 200px;
   height: 200px; }
-
-/* line 247, ../scss/screen.scss */
-figure.tuiles {
+/* line 254, ../scss/screen.scss */
+#suggestions figure.tuiles {
   margin: 0;
   overflow: hidden;
   position: relative; }
-/* line 251, ../scss/screen.scss */
-figure.tuiles figcaption {
+/* line 258, ../scss/screen.scss */
+#suggestions figure.tuiles figcaption {
   position: absolute;
   width: 200px;
   height: 200px;
@@ -339,37 +343,50 @@ figure.tuiles figcaption {
   font-weight: bold;
   padding-top: 5em;
   text-transform: uppercase; }
-
-/* line 269, ../scss/screen.scss */
-figure.tuiles:hover figcaption {
+/* line 276, ../scss/screen.scss */
+#suggestions figure.tuiles:hover figcaption {
   visibility: visible; }
 
-/* line 273, ../scss/screen.scss */
-#flash_notice, #flash_error {
-  width: 15em;
-  padding: 0.4em;
-  border: 0.1em solid rgba(144, 144, 144, 0.8);
-  background-color: white;
-  position: relative;
-  top: 1em;
-  color: green; }
 /* line 281, ../scss/screen.scss */
+#flash_notice, #flash_error {
+  padding: 0.2em 0.5em;
+  border: 0.1em solid rgba(144, 144, 144, 0.8);
+  position: absolute;
+  top: 0.5em;
+  left: 14em;
+  color: green; }
+/* line 288, ../scss/screen.scss */
 #flash_notice:before, #flash_error:before {
   position: absolute;
   top: -0.3em;
   left: 0em; }
 
-/* line 288, ../scss/screen.scss */
+/* line 295, ../scss/screen.scss */
 #flash_error {
-  width: 20em;
-  color: red; }
-/* line 292, ../scss/screen.scss */
-#flash_error:before {
-  position: absolute;
-  top: -0.2em;
-  left: 0em; }
+  border-color: #fbbdbd;
+  background-color: #ffcccc;
+  color: #757575;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
 
-/* line 299, ../scss/screen.scss */
+/* line 304, ../scss/screen.scss */
+.errors {
+  border: 1px solid #fbbdbd;
+  background-color: #ffcccc;
+  color: #757575;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 0.2em 0.5em;
+  position: absolute;
+  left: 34.5em; }
+
+/* line 314, ../scss/screen.scss */
 header:after, div#icones:after, .informations:after, .informationsProfil:after, .sous:after, .sous2:after, div.content-zone:after, div#suggestions:after {
   content: '';
   clear: both;

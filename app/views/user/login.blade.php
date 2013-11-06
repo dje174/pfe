@@ -1,6 +1,9 @@
 @extends('layout')
 
 @section('container')
+    @if(Session::has('flash_notice'))
+        <div id="flash_notice">{{ Session::get('flash_notice') }}</div>
+    @endif
     <section class="main">
         @if (Session::has('flash_error'))
             <div id="flash_error">{{ Session::get('flash_error') }}</div>
@@ -13,8 +16,8 @@
                 {{ Form::text('email', '', array('class' => 'block','placeholder' => 'Votre adresse électronique'));}}
                 <h4>{{ Form::label('password', 'Mot de passe');}}</h4>
                 {{ Form::password('password', array('class' => 'block'));}}
-                <span>{{ Form::checkbox('StayConnect', 'Rester connecté'); }} Je souhaite rester connecté</span>
-                {{ Form::submit('Se connecter', array('id' => 'submit')); }}
+                <span id="stayConnect">{{ Form::checkbox('StayConnect', 'Rester connecté'); }} Je souhaite rester connecté</span>
+                {{ Form::submit('Se connecter', array('class' => 'submit')); }}
             {{ Form::close() }}
         </div>
     </section>

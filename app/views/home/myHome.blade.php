@@ -41,60 +41,62 @@
 
             <div id="suggestions">
             <h4>Les cercles qui pourraient vous intéresser </h4>
-                <a href="/circle">
-                    <figure class="tuiles">
-                    {{ HTML::image('img/tuiles/cercle1.png'); }}                    
-                        <figcaption class="cache">House Circle</figcaption>
-                    </figure>
-                </a>
-                <a href="/circle">
-                    <figure class="tuiles">
-                    {{ HTML::image('img/tuiles/cercle2.png'); }}            
-                        <figcaption class="cache">Glam Rock Circle</figcaption>
-                    </figure>
-                </a>
-                <a href="/circle">
-                    <figure class="tuiles">
-                    {{ HTML::image('img/tuiles/cercle3.png'); }}
-                        <figcaption class="cache">Rap US Circle</figcaption>
-                    </figure>
-                </a>
-                <a href="/circle">
-                    <figure class="tuiles">
-                    {{ HTML::image('img/tuiles/cercle4.png'); }}
-                        <figcaption class="cache">Électro-Pop Circle</figcaption>
-                    </figure>
-                </a>
-                <a href="/circle">
-                    <figure class="tuiles">
-                    {{ HTML::image('img/tuiles/cercle5.png'); }}
-                        <figcaption class="cache">Hard Rock Circle</figcaption>
-                    </figure>
-                </a>
-                <a href="/circle">
-                    <figure class="tuiles">
-                    {{ HTML::image('img/tuiles/cercle6.png'); }}
-                        <figcaption class="cache">Flamenco Circle</figcaption>
-                    </figure>
-                </a>
-                <a href="/circle">
-                    <figure class="tuiles">
-                    {{ HTML::image('img/tuiles/cercle7.png'); }}
-                        <figcaption class="cache">Slam Circle</figcaption>
-                    </figure>
-                </a>
-                <a href="/circle">
-                    <figure class="tuiles">
-                    {{ HTML::image('img/tuiles/cercle8.png'); }}
-                        <figcaption class="cache">Trap Circle</figcaption>
-                    </figure>
-                </a>
-                <a href="/circle">
-                    <figure class="tuiles">
-                    {{ HTML::image('img/tuiles/cercle10.png'); }}
-                        <figcaption class="cache">Drum And Bass Circle</figcaption>
-                    </figure>
-                </a>
+                <div class="tuiles">
+                    <a href="/circle">
+                        <figure class="tuiles">
+                        {{ HTML::image('img/tuiles/cercle1.png'); }}                    
+                            <figcaption class="cache">House Circle</figcaption>
+                        </figure>
+                    </a>
+                    <a href="/circle">
+                        <figure class="tuiles">
+                        {{ HTML::image('img/tuiles/cercle2.png'); }}            
+                            <figcaption class="cache">Glam Rock Circle</figcaption>
+                        </figure>
+                    </a>
+                    <a href="/circle">
+                        <figure class="tuiles">
+                        {{ HTML::image('img/tuiles/cercle3.png'); }}
+                            <figcaption class="cache">Rap US Circle</figcaption>
+                        </figure>
+                    </a>
+                    <a href="/circle">
+                        <figure class="tuiles">
+                        {{ HTML::image('img/tuiles/cercle4.png'); }}
+                            <figcaption class="cache">Électro-Pop Circle</figcaption>
+                        </figure>
+                    </a>
+                    <a href="/circle">
+                        <figure class="tuiles">
+                        {{ HTML::image('img/tuiles/cercle5.png'); }}
+                            <figcaption class="cache">Hard Rock Circle</figcaption>
+                        </figure>
+                    </a>
+                    <a href="/circle">
+                        <figure class="tuiles">
+                        {{ HTML::image('img/tuiles/cercle6.png'); }}
+                            <figcaption class="cache">Flamenco Circle</figcaption>
+                        </figure>
+                    </a>
+                    <a href="/circle">
+                        <figure class="tuiles">
+                        {{ HTML::image('img/tuiles/cercle7.png'); }}
+                            <figcaption class="cache">Slam Circle</figcaption>
+                        </figure>
+                    </a>
+                    <a href="/circle">
+                        <figure class="tuiles">
+                        {{ HTML::image('img/tuiles/cercle8.png'); }}
+                            <figcaption class="cache">Trap Circle</figcaption>
+                        </figure>
+                    </a>
+                    <a href="/circle">
+                        <figure class="tuiles">
+                        {{ HTML::image('img/tuiles/cercle10.png'); }}
+                            <figcaption class="cache">Drum And Bass Circle</figcaption>
+                        </figure>
+                    </a>
+                </div>
             </div>
     </section>
 @stop
