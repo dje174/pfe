@@ -11,16 +11,21 @@
         }
 
         public function store(){
-            $s = $this->user->create(Input::all());
 
-            if($s->isSaved()){
-                return Redirect::route('user.profile')
+            $validator = Validator::make(
+                array(  'email' => Input::get('email'),
+                        'password' => Input::get('password')),
+                array(  'email' => 'required|email',
+                        'password' => 'required|alpha-num'));
+
+            $this->user->create(array('first_name'=>Input::get('first_name'),'name'=>Input::get('name'),'email'=>Input::get('email'),'password'=>Hash::make(Input::get('password'))));
+
+            if($validator->fails()){
+                return Redirect::route('register')->with('flash_error','Il y a une erreur dans le formulaire');
+            }else{
+                return Redirect::route('home')
                 ->with('flash_notice', 'Compte créé');
             }
-
-            return Redirect::route('user.register')
-                ->withInput()
-                ->withErrors($s->errors());
         }
 
     }

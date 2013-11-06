@@ -16,23 +16,23 @@
             <div id="icones">
                 <article class="presentation">
                     {{ HTML::image('img/icons/Monitor-128.png'); }}
-                    <h4 class="icons">Connecter</h4>
+                    <h5 class="icons">Connecter</h5>
                 </article>
                 <article class="presentation">
                     {{ HTML::image('img/icons/Upload-128.png'); }}
-                    <h4 class="icons">Uploader</h4>
+                    <h5 class="icons">Uploader</h5>
                 </article>
                 <article class="presentation">
                     {{ HTML::image('img/icons/Headphone-128.png'); }}
-                    <h4 class="icons">Écouter</h4>
+                    <h5 class="icons">Écouter</h5>
                 </article>
                 <article class="presentation">
                     {{ HTML::image('img/icons/Share-128.png'); }}
-                    <h4 class="icons">Partager</h4>
+                    <h5 class="icons">Partager</h5>
                 </article>
                 <article class="presentation">
                     {{ HTML::image('img/icons/Heart-128.png'); }}
-                    <h4 class="icons">Découvrir</h4>
+                    <h5 class="icons">Découvrir</h5>
                 </article>
             </div>
     </section>

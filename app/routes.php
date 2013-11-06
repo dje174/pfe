@@ -90,13 +90,6 @@ Route::post('login',function(){
         'password' => Input::get('password')
     );
 
-    /*$validator = Validator::make(
-        array(  'email' => Input::get('email'),
-                'password' => Input::get('password')),
-        array(  'email' => 'required|email',
-                'password' => 'required|numeric')
-    );*/
-
     if(Auth::attempt($user)){
 
         return Redirect::intended('home')->with('flash_notice','Vous avez été identifié avec succès');
@@ -128,3 +121,4 @@ Route::post('register',array(
     'uses' => 'RegisterController@store',
     'as' => 'register.store'
 ));
+

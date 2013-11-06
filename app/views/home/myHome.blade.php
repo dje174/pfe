@@ -9,8 +9,8 @@
         <h2>De retour sur music Circles</h2>
         <h3>Concentré d'actualités</h3>
 
-        <h4>Les dernières actus dans vos cercles</h4>
             <div class="content-zone"> 
+                <h4>Les dernières actus dans vos cercles</h4>
                 <article class="informations sous2"> 
                 {{ HTML::image('img/icons/circle-256.png', 'photo du cercle', array('class' => 'photoProfil')); }}              
                     <p class="publications"><span> Il y a 10min, <a href="/friend">Djé</a> à publié dans le cercle <a href="/circle">Techno</a></span>
@@ -21,11 +21,11 @@
                 {{ HTML::image('img/icons/circle-32.png', 'photo du cercle', array('class' => 'photoProfil')); }}              
                     <p class="publications"><span><a href="/friend">Fanny</a> s'est également abonné au cercle <a href="/circle">Minimale</a></span></p>
                 </article>
-                <a href="my-circles" class="plus">Voir plus d'actualités de vos cercles</a>
+                <a href="my-circles" class="plus">Afficher plus</a>
             </div>
 
-        <h4>Les dernières actus de vos amis</h4>
-            <div class="content-zone"> 
+            <div class="content-zone">
+                <h4>Les dernières actus de vos amis</h4> 
                 <article class="informations sous2"> 
                     {{ HTML::image('img/icons/circle-256.png', 'photo du cercle', array('class' => 'photoProfil')); }}              
                         <p class="publications"><span> Il y a 9min, <a href="/friend">Sarah</a> à publié dans le cercle <a href="/circle">Musique Orientale</a></span>
@@ -36,11 +36,11 @@
                 {{ HTML::image('img/icons/circle-32.png', 'photo du cercle', array('class' => 'photoProfil')); }}              
                     <p class="publications"><span><a href="/friend">Paul</a> s'est abonné au cercle <a href="/circle">Métal</a></span></p>
                 </article>
-                <a href="my-friends-circles" class="plus">Voir plus d'actualités des cercles de vos amis</a>
+                <a href="my-friends-circles" class="plus">Afficher plus</a>
             </div>
 
-        <h4>Les cercles qui pourraient vous intéresser </h4>
-            <div class="content-zone">
+            <div id="suggestions">
+            <h4>Les cercles qui pourraient vous intéresser </h4>
                 <a href="/circle">
                     <figure class="tuiles">
                     {{ HTML::image('img/tuiles/cercle1.png'); }}                    
