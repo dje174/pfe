@@ -24,7 +24,7 @@ Route::get('home', array('before' => 'auth', 'as' => 'myHome', function(){
 
 /* USERS */
 
-Route::get('/user/show', array('as' => 'showUser', function(){
+Route::get('/user', array('as' => 'showUser', function(){
     return View::make('user.show');
 }));
 //Voir l'utilisateur
@@ -49,6 +49,11 @@ Route::get('friend', array('before' => 'auth', 'as' => 'friend', function(){
 Route::get('register', array('as' => 'register', function(){
     return View::make('user.register');
 }));//S'inscrire quand non connecté
+
+Route::get('modify', array(
+    'uses' => 'UserController@update',
+    'as' => 'user.update'
+));
 
 
 /* CIRCLES */

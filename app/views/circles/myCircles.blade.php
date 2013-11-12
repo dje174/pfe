@@ -7,7 +7,7 @@
                     <div class="redact">
                         <h5>Rédiger une publication dans un cercle</h4>
                         {{ Form::open() }}
-                            {{ Form::textarea('Publication','', array('placeholder' => 'Rédiger une publication (maximum 240 caractères)','id'=>'textarea')); }}
+                            {{ Form::textarea('Publication','', array('placeholder' => 'Rédiger une publication (maximum 240 caractères)','id'=>'textarea','maxlength'=>'240')); }}
                             <p class="select">{{ Form::label('Publier dans le cercle', 'Publier dans le cercle');}}
                                 {{ Form::select('circles', array('Pop' => 'Pop', 'Techno' => 'Techno')); }}</p>
                             {{ Form::submit('Envoyer', array('class' => 'submit')); }}

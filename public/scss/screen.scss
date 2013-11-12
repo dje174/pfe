@@ -24,7 +24,7 @@ header{
 	background-color:  $gris;
 	float: left;
 	width: 200px;
-	min-height: 40em;
+	min-height: 50em;
 	margin:0;
 	padding:0;
 	position: fixed;
@@ -89,6 +89,18 @@ section.main{
 		text-transform: uppercase;
 		color: white;
 	}
+	.submit {
+		border: 1px solid #dddddd;
+		padding: 0.7em;
+		margin-top: 1em;
+		@include border-radius(0.4em);
+		display: block;
+		background-color: $orange;
+		cursor: pointer;
+		&:hover{
+			background-color: $orangeHover;
+		}
+	}
 }
 
 /* ICONES DE L'ACCUEIL NON CONNECTÉ */
@@ -120,10 +132,11 @@ div#icones{
 }
 
 /* TUILES SUGGESTIONS ACCUEIL CONNECTÉ */
-
+html #suggestions{
+	width: 100%;
+}
 #suggestions{
 	@extend .content-zone;
-	width: auto;
 	div.tuiles{
 		margin-top: 1em;
 	}
@@ -134,7 +147,7 @@ div#icones{
 		height: 200px;
 	}
 	figure.tuiles{
-		margin: 0;
+		margin: 1em 0 0 0;
 		overflow: hidden;
 		position: relative;
 		figcaption{
@@ -179,19 +192,6 @@ div#register{
 	}
 	.block{
 		width: 25em;
-	}
-	.submit{
-		margin-top: 2em;
-		background-color: $orange;
-		color: white;
-		padding: 1em;
-		@include border-radius(0.5em);
-		text-transform: uppercase;
-		cursor: pointer;
-		display: block;
-		&:hover{
-			background-color: $orangeHover;
-		}
 	}
 	#stayConnect{
 		display: block;
@@ -274,13 +274,6 @@ section.publish{
 		height: 5em;
 		border: 1px solid #dddddd;
 		@include border-radius(0.2em);
-	}
-	.submit {
-		border: 1px solid #dddddd;
-		padding: 0.7em;
-		margin-top: 1em;
-		@include border-radius(0.2em);
-		display: block;
 	}
 	p.select{
 		display: block;

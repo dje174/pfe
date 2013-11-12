@@ -14,9 +14,13 @@
                     <li><span>{{ link_to_route('myHome','Accueil') }}</span></li>
                     <li><span>{{ link_to_route('myCircles','Mes cercles') }}</span></li>
                     <li><span>{{ link_to_route('myFriendsCircles','Mes amis') }}</span></li>
-                    <li><span>{{ link_to_route('settings','Paramètres') }}</span></li>
-                    <li><span>{{ link_to_route('profile','Mon profil') }}</span></li>
-                    <li><span>{{ link_to_route('logout','déconnecter') }}</span></li>
+                    <li>
+                        <ul class="sublists">
+                            <li><span>{{ link_to_route('showUser', Auth::user()->first_name) }}</span></li>
+                            <li><span>{{ link_to_route('settings','Paramètres') }}</span></li>
+                            <li><span>{{ link_to_route('logout','déconnecter') }}</span></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         @else
